@@ -1,5 +1,4 @@
 var akCountries = require ('./countries.json');
 
-exports.akCountries = {
-  all: akCountries,
-};
+exports.akCountries = akCountries;
+
