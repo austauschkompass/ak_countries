@@ -1,0 +1,20 @@
+{
+  "name": "ak_countries",
+  "version": "1.0.0",
+  "description": "country to country_code adopted for austauschkompass",
+  "main": "index.js",
+  "private":true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austauschkompass/ak_countries.git"
+  },
+  "author": "rene@so36.net",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austauschkompass/ak_countries/issues"
+  },
+  "homepage": "https://github.com/austauschkompass/ak_countries#readme"
+}
