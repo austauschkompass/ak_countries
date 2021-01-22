@@ -1,4 +1,4 @@
 var akCountries = require ('./countries.json');
 
-exports.akCountries = akCountries;
+exports.default = akCountries;
 
