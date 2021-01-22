@@ -1,4 +1,4 @@
-var akCountries = require ('./countries.json');
+var countries = require ('./countries.json');
 
-exports.akCountries = akCountries;
+exports.akCountries = countries;
 
