@@ -2,6 +2,12 @@
 
 List of Countries with localized names. Consumable as an npm package.
 
+Its contents are localized to german and queries against the data is expected to use
+ISO 3166 two-letter country codes (e.g. 'US').
+
+When available, we chose the short form for countries, e.g. "USA"
+instead of "United States of America".
+
 ## Installation
 
 to install in your project run:
@@ -39,10 +45,15 @@ const countryName = findCountryName('GB') // "Vereinigtes Königreich"
 const countryName = findCountryName('MT') // "Malta"
 ```
 
-## Where does the data come from?
+## How to update data and where does it come from?
 
-Two-letter country codes are ISO 3166-1 and the localized names taken from the [CLDR project]()
-you can update and merge in newer translations (in case territories change their names etc.) by running:
+The list of official Two-letter country codes (ISO 3166-1) is
+downloaded from [datahub](https://datahub.io/core/country-list) and
+the localized names taken from the [CLDR
+project](https://github.com/unicode-org/cldr-json).
+
+You can update and merge in newer translations (in case territories
+change their names etc.) by running:
 
 ```
 yarn install
@@ -51,3 +62,12 @@ yarn run refresh-localized-names
 
 This will rewrite `countries.json` so be sure to check in changes one
 by one, in case manual corrections were overwritten.
+
+Once this is done, commit the results and push changes upstream, to be able to
+update your Apps/Components to use the new translations via:
+
+```
+yarn upgrade ak_countries
+```
+
+__NOTE__: We merge in explicit names for subdivisions of the United Kingdom.

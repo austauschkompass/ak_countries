@@ -9,7 +9,7 @@
   },
   {
     "alpha2": "AX",
-    "name": "Åland-Inseln"
+    "name": "Ålandinseln"
   },
   {
     "alpha2": "AL",
@@ -26,6 +26,10 @@
   {
     "alpha2": "VI",
     "name": "Amerikanische Jungferninseln"
+  },
+  {
+    "alpha2": "UM",
+    "name": "Amerikanische Überseeinseln"
   },
   {
     "alpha2": "AD",
@@ -92,6 +96,10 @@
     "name": "Barbados"
   },
   {
+    "alpha2": "BY",
+    "name": "Belarus"
+  },
+  {
     "alpha2": "BE",
     "name": "Belgien"
   },
@@ -116,10 +124,6 @@
     "name": "Bolivien"
   },
   {
-    "alpha2": "BQ",
-    "name": "Bonaire, Sint Eustatius und Saba"
-  },
-  {
     "alpha2": "BA",
     "name": "Bosnien und Herzegowina"
   },
@@ -129,7 +133,7 @@
   },
   {
     "alpha2": "BV",
-    "name": "Bouvet-Insel"
+    "name": "Bouvetinsel"
   },
   {
     "alpha2": "BR",
@@ -164,10 +168,6 @@
     "name": "Cabo Verde"
   },
   {
-    "alpha2": "KY",
-    "name": "Cayman-Inseln"
-  },
-  {
     "alpha2": "CL",
     "name": "Chile"
   },
@@ -185,7 +185,7 @@
   },
   {
     "alpha2": "CI",
-    "name": "Côte d'Ivoire"
+    "name": "Côte d’Ivoire"
   },
   {
     "alpha2": "CW",
@@ -194,10 +194,6 @@
   {
     "alpha2": "DK",
     "name": "Dänemark"
-  },
-  {
-    "alpha2": "CD",
-    "name": "Demokratische Republik Kongo"
   },
   {
     "alpha2": "DE",
@@ -232,12 +228,16 @@
     "name": "Estland"
   },
   {
+    "alpha2": "SZ",
+    "name": "Eswatini"
+  },
+  {
     "alpha2": "FK",
-    "name": "Falklandinseln (Malwinen)"
+    "name": "Falklandinseln"
   },
   {
     "alpha2": "FO",
-    "name": "Färöer-Inseln"
+    "name": "Färöer"
   },
   {
     "alpha2": "FJ",
@@ -253,7 +253,7 @@
   },
   {
     "alpha2": "GF",
-    "name": "Französisch-Guyana"
+    "name": "Französisch-Guayana"
   },
   {
     "alpha2": "PF",
@@ -332,10 +332,6 @@
     "name": "Heard und McDonaldinseln"
   },
   {
-    "alpha2": "VA",
-    "name": "Heiliger Stuhl (Staat Vatikanstadt)"
-  },
-  {
     "alpha2": "HN",
     "name": "Honduras"
   },
@@ -352,16 +348,12 @@
     "name": "Indonesien"
   },
   {
-    "alpha2": "IM",
-    "name": "Insel Man"
-  },
-  {
     "alpha2": "IQ",
     "name": "Irak"
   },
   {
     "alpha2": "IR",
-    "name": "Iran, Islamische Republik"
+    "name": "Iran"
   },
   {
     "alpha2": "IE",
@@ -370,6 +362,10 @@
   {
     "alpha2": "IS",
     "name": "Island"
+  },
+  {
+    "alpha2": "IM",
+    "name": "Isle of Man"
   },
   {
     "alpha2": "IL",
@@ -400,6 +396,10 @@
     "name": "Jordanien"
   },
   {
+    "alpha2": "KY",
+    "name": "Kaimaninseln"
+  },
+  {
     "alpha2": "KH",
     "name": "Kambodscha"
   },
@@ -410,6 +410,10 @@
   {
     "alpha2": "CA",
     "name": "Kanada"
+  },
+  {
+    "alpha2": "BQ",
+    "name": "Karibische Niederlande"
   },
   {
     "alpha2": "KZ",
@@ -433,7 +437,7 @@
   },
   {
     "alpha2": "CC",
-    "name": "Kokos-(Keeling-)Inseln"
+    "name": "Kokosinseln"
   },
   {
     "alpha2": "CO",
@@ -445,15 +449,11 @@
   },
   {
     "alpha2": "CG",
-    "name": "Kongo"
+    "name": "Kongo-Brazzaville"
   },
   {
-    "alpha2": "KP",
-    "name": "Korea, Demokratische Volksrepublik"
-  },
-  {
-    "alpha2": "KR",
-    "name": "Korea, Republik"
+    "alpha2": "CD",
+    "name": "Kongo-Kinshasa"
   },
   {
     "alpha2": "HR",
@@ -469,7 +469,7 @@
   },
   {
     "alpha2": "LA",
-    "name": "Laos, Demokratische Volksrepublik"
+    "name": "Laos"
   },
   {
     "alpha2": "LS",
@@ -505,7 +505,7 @@
   },
   {
     "alpha2": "MO",
-    "name": "Macao"
+    "name": "Macau"
   },
   {
     "alpha2": "MG",
@@ -556,20 +556,12 @@
     "name": "Mayotte"
   },
   {
-    "alpha2": "MK",
-    "name": "Mazedonien, ehemalige jugoslawische Republik"
-  },
-  {
     "alpha2": "MX",
     "name": "Mexiko"
   },
   {
     "alpha2": "FM",
-    "name": "Mikronesien, Föderierte Staaten von"
-  },
-  {
-    "alpha2": "MD",
-    "name": "Moldau"
+    "name": "Mikronesien"
   },
   {
     "alpha2": "MC",
@@ -636,8 +628,16 @@
     "name": "Niue"
   },
   {
+    "alpha2": "KP",
+    "name": "Nordkorea"
+  },
+  {
     "alpha2": "MP",
     "name": "Nördliche Marianen"
+  },
+  {
+    "alpha2": "MK",
+    "name": "Nordmazedonien"
   },
   {
     "alpha2": "NF",
@@ -661,7 +661,7 @@
   },
   {
     "alpha2": "PS",
-    "name": "Palästina, Staat"
+    "name": "Palästina"
   },
   {
     "alpha2": "PW",
@@ -689,7 +689,7 @@
   },
   {
     "alpha2": "PN",
-    "name": "Pitcairn"
+    "name": "Pitcairninseln"
   },
   {
     "alpha2": "PL",
@@ -702,6 +702,10 @@
   {
     "alpha2": "PR",
     "name": "Puerto Rico"
+  },
+  {
+    "alpha2": "MD",
+    "name": "Republik Moldau"
   },
   {
     "alpha2": "RE",
@@ -717,23 +721,11 @@
   },
   {
     "alpha2": "RU",
-    "name": "Russische Föderation"
-  },
-  {
-    "alpha2": "MF",
-    "name": "Saint Martin (Französischer Teil)"
-  },
-  {
-    "alpha2": "BL",
-    "name": "Saint-Barthélemy"
-  },
-  {
-    "alpha2": "SX",
-    "name": "Saint-Martin (Niederländischer Teil)"
+    "name": "Russland"
   },
   {
     "alpha2": "SB",
-    "name": "Salomoninseln"
+    "name": "Salomonen"
   },
   {
     "alpha2": "ZM",
@@ -788,6 +780,10 @@
     "name": "Singapur"
   },
   {
+    "alpha2": "SX",
+    "name": "Sint Maarten"
+  },
+  {
     "alpha2": "SK",
     "name": "Slowakei"
   },
@@ -800,20 +796,24 @@
     "name": "Somalia"
   },
   {
-    "alpha2": "GS",
-    "name": "South Georgia und die Südlichen Sandwichinseln"
-  },
-  {
     "alpha2": "ES",
     "name": "Spanien"
+  },
+  {
+    "alpha2": "SJ",
+    "name": "Spitzbergen und Jan Mayen"
   },
   {
     "alpha2": "LK",
     "name": "Sri Lanka"
   },
   {
+    "alpha2": "BL",
+    "name": "St. Barthélemy"
+  },
+  {
     "alpha2": "SH",
-    "name": "St. Helena, Ascension und Tristan da Cunha"
+    "name": "St. Helena"
   },
   {
     "alpha2": "KN",
@@ -822,6 +822,10 @@
   {
     "alpha2": "LC",
     "name": "St. Lucia"
+  },
+  {
+    "alpha2": "MF",
+    "name": "St. Martin"
   },
   {
     "alpha2": "PM",
@@ -840,6 +844,14 @@
     "name": "Sudan"
   },
   {
+    "alpha2": "GS",
+    "name": "Südgeorgien und die Südlichen Sandwichinseln"
+  },
+  {
+    "alpha2": "KR",
+    "name": "Südkorea"
+  },
+  {
     "alpha2": "SS",
     "name": "Südsudan"
   },
@@ -848,16 +860,8 @@
     "name": "Suriname"
   },
   {
-    "alpha2": "SJ",
-    "name": "Svalbard und Jan Mayen"
-  },
-  {
-    "alpha2": "SZ",
-    "name": "Swasiland"
-  },
-  {
     "alpha2": "SY",
-    "name": "Syrien, Arabische Republik"
+    "name": "Syrien"
   },
   {
     "alpha2": "TJ",
@@ -928,44 +932,8 @@
     "name": "Uganda"
   },
   {
-    "alpha2": "UA",
-    "name": "Ukraine"
-  },
-  {
-    "alpha2": "HU",
-    "name": "Ungarn"
-  },
-  {
-    "alpha2": "UM",
-    "name": "United States Minor Outlying Islands"
-  },
-  {
-    "alpha2": "UY",
-    "name": "Uruguay"
-  },
-  {
-    "alpha2": "UZ",
-    "name": "Usbekistan"
-  },
-  {
-    "alpha2": "VU",
-    "name": "Vanuatu"
-  },
-  {
-    "alpha2": "VE",
-    "name": "Venezuela"
-  },
-  {
-    "alpha2": "AE",
-    "name": "Vereinigte Arabische Emirate"
-  },
-  {
-    "alpha2": "US",
-    "name": "Vereinigte Staaten"
-  },
-  {
     "alpha2": "GB",
-    "name": "Vereinigtes Königreich",
+    "name": "UK",
     "subdivisions": [
       {
         "code": "ENG",
@@ -986,6 +954,42 @@
     ]
   },
   {
+    "alpha2": "UA",
+    "name": "Ukraine"
+  },
+  {
+    "alpha2": "HU",
+    "name": "Ungarn"
+  },
+  {
+    "alpha2": "UY",
+    "name": "Uruguay"
+  },
+  {
+    "alpha2": "US",
+    "name": "USA"
+  },
+  {
+    "alpha2": "UZ",
+    "name": "Usbekistan"
+  },
+  {
+    "alpha2": "VU",
+    "name": "Vanuatu"
+  },
+  {
+    "alpha2": "VA",
+    "name": "Vatikanstadt"
+  },
+  {
+    "alpha2": "VE",
+    "name": "Venezuela"
+  },
+  {
+    "alpha2": "AE",
+    "name": "Vereinigte Arabische Emirate"
+  },
+  {
     "alpha2": "VN",
     "name": "Vietnam"
   },
@@ -995,11 +999,7 @@
   },
   {
     "alpha2": "CX",
-    "name": "Weihnachtsinseln"
-  },
-  {
-    "alpha2": "BY",
-    "name": "Weißrussland"
+    "name": "Weihnachtsinsel"
   },
   {
     "alpha2": "EH",
