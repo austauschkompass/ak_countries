@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "country to country_code adopted for austauschkompass",
   "main": "index.js",
-  "private":true,
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "refresh-localized-names": "node ./refresh-localized-names.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/austauschkompass/ak_countries/issues"
   },
-  "homepage": "https://github.com/austauschkompass/ak_countries#readme"
+  "homepage": "https://github.com/austauschkompass/ak_countries#readme",
+  "devDependencies": {
+    "cldr-localenames-full": "^39.0.0",
+    "node-fetch": "^2.6.1"
+  }
 }
