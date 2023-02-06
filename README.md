@@ -144,13 +144,7 @@ import (
 )
 
 func main() {
-  countries, err := ak_countries.LoadCountries()
-  
-  if err != nil {
-    log.Fatalf("Failed loading Countries: %v", err)
-  }
-  
-  log.Printf("Wie, du warst noch niemals in %s?", ak_countries.GetCountryNameByCode(countries, "CA"))
+  log.Printf("Wie, du warst noch niemals in %s?", ak_countries.GetCountryNameByCode("CA"))
 }
 
 ```
@@ -166,10 +160,10 @@ This function will always return a string and fallback to "Unbekannt" if the giv
 
 This function returns an error if the given country cannot be found.
 
-Example usage (assuming `countries` was already loaded and checked via `LoadCountries`):
+Example usage:
 
 ```
-country, err := ak_countries.FindCountryByCode(countries, "MT")
+country, err := ak_countries.FindCountryByCode("MT")
 
 if err == nil {
   log.Printf("Mit dem Rad nach %s (%s)?", country.Name, country.Alpha2)
