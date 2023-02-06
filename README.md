@@ -1,6 +1,6 @@
 # AustauschKompass Countries
 
-List of Countries with localized names. Consumable as an npm package.
+Single source of truth for a localized list of country names. Consumable as an [npm package](#javascript-npm-package) and [go module](#go-module).
 
 Contents are localized to german.
 
@@ -8,7 +8,9 @@ When available, we chose the short form for countries, e.g. "USA"
 instead of "Vereinigte Staaten von Amerika", "UK" instead of
 "Vereinigtes Königreich".
 
-## Installation
+## JavaScript (npm package)
+
+### Installation
 
 to install in your project run:
 
@@ -22,7 +24,7 @@ to ensure JSON is loaded and embedded (e.g. via `json-loader` for
 `webpack`) correctly. Otherwise the imported lists will be
 undefined!
 
-## Usage
+### Usage
 
 This library exports various country lists for different usage
 scenarios.
@@ -127,6 +129,45 @@ const countryName = findCountryName('GB') // "UK"
 const countryName = findCountryName('MT') // "Malta"
 // but
 const countryName = findCountryName('GB-WLS') // "UK"
+```
+
+## Go (module)
+
+__TODO__ Handle subdivision lookup
+
+Example usage within your go project:
+
+```go
+import (
+  "log"
+  "github.com/austauschkompass/ak_countries"
+)
+
+func main() {
+  log.Printf("Wie, du warst noch niemals in %s?", ak_countries.GetCountryNameByCode("CA"))
+}
+
+```
+
+Run `go mod tidy` once.
+
+
+### `GetCountryNameByCode`
+
+This function will always return a string and fallback to "Unbekannt" if the given country cannot be found.
+
+### `FindCountryByCode`
+
+This function returns an error if the given country cannot be found.
+
+Example usage:
+
+```
+country, err := ak_countries.FindCountryByCode("MT")
+
+if err == nil {
+  log.Printf("Mit dem Rad nach %s (%s)?", country.Name, country.Alpha2)
+}
 ```
 
 ## How to update data and where does it come from?
