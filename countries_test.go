@@ -8,18 +8,12 @@ func TestMain(m *testing.M) {
 	m.Run()
 }
 
-func TestLoadCountries(t *testing.T) {
-	countries, err := LoadCountries()
-
-	if err != nil {
-		t.Fatalf("Expected loading countries to succeed, but if failed with: %v", err)
-	}
-
-	if len(countries) == 0 {
+func TestModuleInit(t *testing.T) {
+	if len(Countries) == 0 {
 		t.Fatalf("Expected some countries, but the list is empty")
 	}
 
-	country := countries[0]
+	country := Countries[0]
 
 	if country.Alpha2 != "AF" {
 		t.Fatalf("Expected AF as first country code, but got: %v", country.Alpha2)
@@ -31,7 +25,7 @@ func TestLoadCountries(t *testing.T) {
 
 	var countryWithSubdivisions *Country
 
-	for _, c := range countries {
+	for _, c := range Countries {
 		if c.Subdivisions != nil {
 			countryWithSubdivisions = &c
 			break
@@ -58,13 +52,7 @@ func TestLoadCountries(t *testing.T) {
 }
 
 func TestFindCountryByCode(t *testing.T) {
-	countries, err := LoadCountries()
-
-	if err != nil {
-		t.Fatalf("failed to load countries")
-	}
-
-	country, err := FindCountryByCode(countries, "CA")
+	country, err := FindCountryByCode("CA")
 
 	if err != nil {
 		t.Fatalf("Failed finding country with code CA: %v", err)
@@ -76,13 +64,7 @@ func TestFindCountryByCode(t *testing.T) {
 }
 
 func TestFindCountryByCodeFail(t *testing.T) {
-	countries, err := LoadCountries()
-
-	if err != nil {
-		t.Fatalf("failed to load countries")
-	}
-
-	_, err = FindCountryByCode(countries, "DEFINITELY_NOT_THERE")
+	_, err := FindCountryByCode("DEFINITELY_NOT_THERE")
 
 	if err == nil {
 		t.Fatalf("Expected finding country to fail, but it did not")
@@ -90,13 +72,7 @@ func TestFindCountryByCodeFail(t *testing.T) {
 }
 
 func TestGetCountryNameByCode(t *testing.T) {
-	countries, err := LoadCountries()
-
-	if err != nil {
-		t.Fatalf("failed to load countries")
-	}
-
-	name := GetCountryNameByCode(countries, "CA")
+	name := GetCountryNameByCode("CA")
 
 	if name != "Kanada" {
 		t.Fatalf("Expected Country name to be 'Kanada' but got: %v", name)
