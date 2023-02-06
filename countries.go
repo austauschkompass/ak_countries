@@ -9,7 +9,7 @@ import (
 //go:embed countries.json
 var countriesFile []byte
 
-var countries []Country
+var Countries []Country
 
 type Subdivision struct {
 	Code string `json:"code"`
@@ -22,23 +22,20 @@ type Country struct {
 	Subdivisions *[]Subdivision `json:"subdivisions"`
 }
 
-// Load countries once, then return global variable directly
-func LoadCountries() ([]Country, error) {
-	if len(countries) == 0 {
-		if err := json.Unmarshal(countriesFile, &countries); err != nil {
-			return countries, err
-		}
+// Load countries on module load
+func init() {
+	if err := json.Unmarshal(countriesFile, &Countries); err != nil {
+		// This should not happen, but if it does we should fail hard/early
+		panic(err)
 	}
-
-	return countries, nil
 }
 
 // Find a country by code from the given list of countries
 // When the given code cannot be found, will return nil, error!
-func FindCountryByCode(countries []Country, code string) (*Country, error) {
+func FindCountryByCode(code string) (*Country, error) {
 	var country *Country
 
-	for _, entry := range countries {
+	for _, entry := range Countries {
 		if entry.Alpha2 == code {
 			country = &entry
 			break
@@ -54,8 +51,8 @@ func FindCountryByCode(countries []Country, code string) (*Country, error) {
 
 // Get a name for a country by code from the given list of countries
 // When given code cannot be found returns "Unbekannt"
-func GetCountryNameByCode(countries []Country, code string) string {
-	country, err := FindCountryByCode(countries, code)
+func GetCountryNameByCode(code string) string {
+	country, err := FindCountryByCode(code)
 
 	if err == nil {
 		return country.Name
