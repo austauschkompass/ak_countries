@@ -78,3 +78,40 @@ func TestGetCountryNameByCode(t *testing.T) {
 		t.Fatalf("Expected Country name to be 'Kanada' but got: %v", name)
 	}
 }
+
+func TestGetCountryNameByCodeWithSubdivision(t *testing.T) {
+	name := GetCountryNameByCode("GB-ENG")
+
+	if name != "England" {
+		t.Fatalf("Expected Country name to be 'England' but got: %v", name)
+	}
+}
+
+func TestFindCountryByAlpha2(t *testing.T) {
+	country, err := FindCountryByAlpha2("CA")
+
+	if err != nil {
+		t.Fatalf("Failed finding country with code CA: %v", err)
+	}
+
+	if country.Name != "Kanada" {
+		t.Fatalf("Expected Country with name 'Kanada', but got: %v", country.Name)
+	}
+}
+
+// Ensure we cannot accidentally return subdivisions here
+func TestFindCountryByAlpha2Fail(t *testing.T) {
+	_, err := FindCountryByAlpha2("GB-ENG")
+
+	if err == nil {
+		t.Fatalf("Expected finding country to fail, but it did not")
+	}
+}
+
+func TestGetCountryNameByAlpha2(t *testing.T) {
+	name := GetCountryNameByAlpha2("CA")
+
+	if name != "Kanada" {
+		t.Fatalf("Expected Country name to be 'Kanada' but got: %v", name)
+	}
+}

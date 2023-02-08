@@ -133,8 +133,6 @@ const countryName = findCountryName('GB-WLS') // "UK"
 
 ## Go (module)
 
-__TODO__ Handle subdivision lookup
-
 Example usage within your go project:
 
 ```go
@@ -154,11 +152,12 @@ Run `go mod tidy` once.
 
 ### `GetCountryNameByCode`
 
-This function will always return a string and fallback to "Unbekannt" if the given country cannot be found.
+This function will always return a string and fallback to "Unbekannt" if the given country cannot be found. It also accepts a country code with subdivision, e.g. `GB-ENG`.
 
 ### `FindCountryByCode`
 
-This function returns an error if the given country cannot be found.
+This function returns an error if the given country or subdivision cannot be found.
+It accepts both an alpha2 like `CA` or country code with subdivision, e.g. `GB-ENG`.
 
 Example usage:
 
@@ -166,9 +165,18 @@ Example usage:
 country, err := ak_countries.FindCountryByCode("MT")
 
 if err == nil {
-  log.Printf("Mit dem Rad nach %s (%s)?", country.Name, country.Alpha2)
+  log.Printf("Mit dem Rad nach %s (%s)?", country.Name, country.Code)
 }
 ```
+
+### `GetCountryNameByAlpha2`
+
+Return a name for the country with given alpha2 code. Returns "Unbekannt" if it cannot be found.
+
+### `FindCountryByAlpha2`
+
+Return a country by its alpha2 code. Fails with an error if the country cannot be found.
+
 
 ## How to update data and where does it come from?
 
